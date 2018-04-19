@@ -26,11 +26,13 @@ public abstract class Character
         return name;
     }
 
-    public Room getCurrentRoom() {
+    public Room getCurrentRoom()
+    {
         return currentRoom;
     }
 
-    public void setCurrentRoom(Room currentRoom) {
+    public void setCurrentRoom(Room currentRoom)
+    {
         this.currentRoom = currentRoom;
     }
 }

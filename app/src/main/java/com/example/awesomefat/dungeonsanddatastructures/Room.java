@@ -57,18 +57,18 @@ public class Room
         this.exits.put(direction, e);
     }
 
-//    public boolean takeExit(String direction)
-//    {
-//        Exit temp = this.exits.get(direction);
-//        if(temp != null)
-//        {
-//            return temp.takeExit(this.players.getFirst());
-//        }
-//        else
-//        {
-//            return false;
-//        }
-//    }
+    public boolean takeExit(String direction)
+    {
+      Exit temp = this.exits.get(direction);
+      if(temp != null)
+        {
+           return temp.takeExit(this.players.getFirst());
+        }
+       else
+        {
+           return false;
+       }
+    }
 
     //Player management
     synchronized private void players_PerformAction(String action, Object[] params)

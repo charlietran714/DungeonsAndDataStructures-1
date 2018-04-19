@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
     public void onExitButtonClicked(View v)
     {
         Button b = (Button)v;
-        //this.p.getCurrentRoom().takeExit(b.getText().toString().toLowerCase());
+        this.p.getCurrentRoom().takeExit(b.getText().toString().toLowerCase());
         this.fillInterface(this.p.getCurrentRoom());
     }
 
